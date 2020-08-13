@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { GlobalStyle } from "../components/globalStyle/global.style"
+import { NameContainer } from "../components/homeStyle/home.style"
 import { PressableComponent } from "../components/atoms/pressable/pressable.component"
 import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa"
 import Avatar from "../assets/avatar.jpg"
@@ -30,11 +31,13 @@ export default function Home() {
             borderColor: "white",
             borderWidth: 1,
           }}
+          alt="Avatar"
           src={Avatar}
         />
-        <div style={{ fontSize: 36, marginTop: 16 }}>
-          Juan Alberto Palavecino Constantín
-        </div>
+        <NameContainer>
+          <div style={{ paddingRight: 8 }}>Juan Alberto </div>
+          <div> Palavecino Constantín</div>
+        </NameContainer>
         <div style={{ fontSize: 30, marginTop: 16 }}>Software Developer</div>
         <div style={{ marginTop: 16 }}>
           <PressableComponent isLink href={"https://github.com/Leorek"}>

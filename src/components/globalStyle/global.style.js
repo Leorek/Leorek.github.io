@@ -1,9 +1,11 @@
-import styled, { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
 
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
+        font-family: 'Ubuntu';
+        src: url("fonts/ubuntu/Ubuntu-Regular.woff") format("woff");
+    }
     html, body {
         height:100%;
         padding: 0;

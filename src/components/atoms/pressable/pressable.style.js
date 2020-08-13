@@ -2,6 +2,13 @@ import styled, { css } from "styled-components"
 
 const containerCommonStyle = css`
   display: inline-block;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: inherit;
+  }
+
   &:hover {
     cursor: pointer;
     color: #34495e;
